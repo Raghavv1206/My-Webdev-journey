@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* box-shadow: h-offset v-offset blur spread color inset;
+        h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+        blur: The larger the value, the blurrier the shadow.
+        spread: Expands or shrinks the shadow size.
+        color: Defines the shadow color.
+        inset: Makes the shadow inner. */
+        .box{
+            border: 2px solid blue;
+            padding:34px;
+            box-shadow: 5px 5px 15px 5px #888888;
+                border-radius: 8px;
+                
+        }
+        .text-element { text-shadow: 2px 2px 4px #888888;
+        outline: 2px solid black;
+        outline-offset: 19px;
+        border-radius: 8px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">i am a box</div>
+    <p class="text-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis blanditiis, architecto excepturi odio omnis impedit illum cupiditate autem temporibus officia odit, quia nulla accusantium!</p>
+</body>
+</html>
