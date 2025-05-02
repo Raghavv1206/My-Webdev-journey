@@ -1,9 +1,36 @@
 *{
+    margin: 0;
     padding: 0;
 
 }
 
 .main{
-    background-image: url("assets\images\the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg");
+    background-image: url("../assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
     height: 80vh;
+    position: relative;
+}
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+nav img{
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
 }
