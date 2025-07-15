@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/video67/index.html"
+    "livePreview.defaultPreviewPath": "/video67/index.html",
+    "svg.preview.background": "editor"
 }
