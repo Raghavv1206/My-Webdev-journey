@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div ul{
+    display: flex;
+    gap: 40px ;
+    background-color: beige;
+    height: 50px;
+    align-items: center;
+    padding: 10px;
+}
+ul li{
+    list-style-type: none;
+}
