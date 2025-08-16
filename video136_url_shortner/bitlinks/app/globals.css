@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* Base setup */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  transition: background 2s ease, color 2s ease;
+}
+
+/* Light Mode — Blue Sky Theme (default) */
+body {
+  background: linear-gradient(135deg, #87ceeb, #b0e0e6, #e0f7fa); /* soft blue tones */
+  background-size: 300% 300%;
+  animation: gradientShift 20s ease infinite;
+  color: #1e3a8a; /* deep navy text */
+}
+
+/* Dark Mode — Starry Night Theme */
+.dark body {
+  background: radial-gradient(circle at top, #0b0d17, #000000 80%);
+  background-size: cover;
+  color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Twinkling stars overlay in dark mode */
+.dark body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent url("/stars.png") repeat;
+  background-size: contain;
+  animation: twinkle 4s infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Gradient shift animation for sky */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Star twinkling animation */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
